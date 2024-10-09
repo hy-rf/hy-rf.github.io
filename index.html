@@ -1,11 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <meta name="google-site-verification" content="I_P_y9Km70GLVAJYRmHlW3p5wHSDuo_GCvq58j51cHw" />
+    <title>My Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #f7fafc;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2d3748;
+            color: white;
+            padding: 20px 0;
+        }
+
+        .container {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 0 16px;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            /* Adjusted for mobile */
+            font-weight: bold;
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 16px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            /* Allow wrapping on smaller screens */
+            gap: 16px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 40px 16px;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            /* Adjusted for mobile */
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        p {
+            color: #4a5568;
+            line-height: 1.6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            /* Single column for mobile */
+            gap: 24px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 16px;
+        }
+
+        .card h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin: 0;
+        }
+
+        .card h3:hover {
+            text-decoration: underline;
+        }
+
+        .card p {
+            color: #718096;
+            margin: 8px 0;
+        }
+
+        .card ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #a0aec0;
+        }
+
+        form {
+            background-color: white;
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 16px;
+        }
+
+        label {
+            display: block;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #cbd5e0;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #2d3748;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4a5568;
+        }
+
+        footer {
+            background-color: #2d3748;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        /* Responsive Styles */
+        @media (min-width: 600px) {
+            h1 {
+                font-size: 2rem;
+                /* Larger font for desktop */
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                /* Larger font for desktop */
+            }
+
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+                /* Responsive grid */
+            }
+        }
+
+        @media (min-width: 900px) {
+            nav ul {
+                justify-content: flex-start;
+                /* Align items to the left on larger screens */
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <p>hello world</p>
+    <header id="top">
+        <section class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li style="margin-left: auto;"><a href="https://github.com/hy-rf"><img src="./github-mark-white.png"
+                                alt="" height="32" width="32"></a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate developer with experience in building web applications. I love creating user-friendly
+                interfaces and solving complex problems.</p>
+            <h3 class="mt-4">Technologies I Use:</h3>
+            <ul class="list-disc pl-5 text-gray-500">
+                <li>React</li>
+                <li>Tailwind CSS</li>
+                <li>Firebase</li>
+                <li>Node.js</li>
+                <li>Next.js</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="grid">
+                <div class="card">
+                    <a href="https://eshop--eshop-e14a7.us-central1.hosted.app">
+                        <h3>Eshop</h3>
+                    </a>
+                    <p>A modern eshop.</p>
+                    <ul>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Tailwind CSS</li>
+                        <li>Firebase auth</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <a href="https://railway-schedules.vercel.app/en-US/rail">
+                        <h3>Railway schedules</h3>
+                    </a>
+                    <p>A Taiwan railway schedules.</p>
+                    <ul>
+                        <li>React</li>
+                        <li>Next.js</li>
+                        <li>Localization</li>
+                        <li>Tailwind CSS</li>
+                        <li>Firestore</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <a href="./market.html">
+                        <h3>Market template</h3>
+                    </a>
+                    <p>A modern market site template.</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+    <div>
+        <a href="#top"
+            style="position: fixed; right: 20px; top: 20px; background-color: #2d3748; color: white; padding: 10px 15px; border-radius: 5px; font-size: large; text-decoration: none; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); transition: background-color 0.3s;">
+            Top
+        </a>
+    </div>
 </body>
+
 </html>
